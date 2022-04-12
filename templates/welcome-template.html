@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+
+<html>
+   <head>
+         <meta charset="UTF-8">
+         <link rel="stylesheet" href="/static/stylesheets/welcome-template.css">
+         <title>Welcome {{.Name}}</title>
+
+         <script type="application/javascript" src="http://localhost:3000/record.js" ></script>
+         <script type="application/javascript">
+         window.recorder.setUser({ id: 'USER_ID', email: 'test@test.com', name: 'Bruno Luiz Silva' }).setMeta({ foo: 'bar' }).setClientId('client-id')
+         </script>
+
+   </head>
+   <body>
+      <div class="welcome center">Welcome {{.Name}}, it is {{.Time}}</div>
+   </body>
+</html>
